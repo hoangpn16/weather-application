@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org/" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Weather of City</title>
+    <link rel="stylesheet" href="detailcity.css">
+</head>
+<body style="background-position: right;
+    background-color: gray;">
+<div>
+    <h2 th:text="'Weather of ' + ${response.getCityName()}"></h2>
+    <p th:text="'Current Temperature: '+ ${response.getCurrentTemp().toString()}+ '°C'"></p>
+    <p th:text="'Max Temperature: ' + ${response.getMaxTemp().toString()} + ' °C'"></p>
+    <p th:text="'Min Temperature: ' + ${response.getMinTemp().toString()} + ' °C'"></p>
+</div>
+</body>
+</html>

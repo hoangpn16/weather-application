@@ -1,0 +1,44 @@
+.table_title {
+    padding: 10px;
+    color: red;
+}
+body {
+    height: 100%;
+    background-position: center;
+    background-color: #CCFFFF;
+}
+
+#title_of_screen {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+#list_city {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.list_cities {
+    display: flex;
+    list-style-type: none;
+    padding: 10;
+    margin-right: 10px;
+    margin-left:10px;
+}
+
+.list_cities_item {
+    width: 100%;
+    margin-top: 10px;
+    height: 140px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #99FF33;
+    border-radius: 10px;
+    margin-right: 10px;
+}

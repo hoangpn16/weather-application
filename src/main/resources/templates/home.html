@@ -1,0 +1,28 @@
+Phan Hoàng, [19.01.21 11:30]
+<html xmlns:th="http://www.thymeleaf.org/" lang="en">
+<head>
+    <title>Dự báo thời tiết</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="title_of_screen">Weather forecast of provinces</h1>
+<h2 style="text-align:center;color:red">Date: 19/01/2021</h2>
+
+<div id="list_city">
+    <ul class="list_cities">
+        <li class="list_cities_item" th:each="entity:${listWeather}">
+            <div style="float: right;  align-items: center; justify-items: center ; justify-content: center; margin-right:0px; margin-top: 10px;">
+                <img width="130px" height="130px" th:src="${entity.getCityImage()}"
+                     id="itemImg">
+            </div>
+            <div style="float: left;">
+                <h3 th:text="${entity.getCityName()}"></h3>
+                <p th:text="'Current Temperature: ' + ${entity.getCurrentTemp().toString()} + ' °C'"></p>
+                <a th:href="@{/detail/(cityname=${entity.getCityName()})}">More infor...</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
