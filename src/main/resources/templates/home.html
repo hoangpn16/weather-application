@@ -18,7 +18,7 @@ Phan Hoàng, [19.01.21 11:30]
             <div style="float: left;">
                 <h3 th:text="${entity.getCityName()}"></h3>
                 <p th:text="'Current Temperature: ' + ${entity.getCurrentTemp().toString()} + ' °C'"></p>
-                <a th:href="@{/detail/(cityname=${entity.getCityName()})}">More infor...</a>
+                <a th:href="@{/detailcity/(cityname=${entity.getCityName()})}">More infor...</a>
             </div>
         </li>
     </ul>

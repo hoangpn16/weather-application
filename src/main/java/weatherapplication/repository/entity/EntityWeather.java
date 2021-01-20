@@ -1,4 +1,4 @@
-package weatherapplication.repository;
+package weatherapplication.repository.entity;
 
 import lombok.Getter;
 import lombok.Setter;

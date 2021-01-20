@@ -8,11 +8,10 @@
 </head>
 <body style="background-position: right;
     background-color: gray;">
-<div>
-    <h2 th:text="'Weather of ' + ${response.getCityName()}"></h2>
+    <h3 th:text="'Weather of ' + ${response.getCityName()}"></h3>
     <p th:text="'Current Temperature: '+ ${response.getCurrentTemp().toString()}+ '°C'"></p>
     <p th:text="'Max Temperature: ' + ${response.getMaxTemp().toString()} + ' °C'"></p>
     <p th:text="'Min Temperature: ' + ${response.getMinTemp().toString()} + ' °C'"></p>
-</div>
+
 </body>
 </html>
